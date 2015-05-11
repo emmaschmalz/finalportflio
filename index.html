@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Portfolio </title>
+<meta charset= "utf-8">
+<link rel="stylesheet" href="style.css">
+<style>
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+
+#script{
+  float:center;
+  width: 500px;
+  height: 200px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+
+<header>
+  <h1> Elizabeth Schmalz </h1>
+</header>
+<nav>
+  <div id="navLinks">
+  <a href="index.html"> home</a>
+  <a href="about.html"> about</a>
+  <a href="education.html"> education</a>
+  <a href= "experience.html"> experience</a>
+  <a href="skills.html"> skills </a>
+</nav>
+</div>
+
+<img name="slide" src="selfie.png" />
+ <script language="JavaScript">
+   var i = 0;
+     var path = new Array();
+     // LIST OF IMAGES
+     path[0] = "selfies.png";
+     path[1] = "sigma.png";
+     path[2] = "travel2.png";
+     path[3] = "stjoes.png";
+     path[4] = "sydney.png";
+     path[5] = "soccer.png";
+     path[6] = "italy.png";
+     path[7] = "challenge.png";
+     path[8] = "me.png";
+     path[9] = "vollyball.png";
+     path[10]= "travel.png";
+          function swapImage()
+     {
+       document.slide.src = path[i];
+       if(i < path.length - 1) i++; else i = 0;
+       setTimeout("swapImage()",3000);
+     }
+     window.onload=swapImage;
+</script>
+</img>
+
+</body>
+</html>
